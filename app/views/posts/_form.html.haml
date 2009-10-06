@@ -1,14 +1,15 @@
-%p
-  = form.label :title
-  %br
-  = form.text_field :title
-%p
-  = form.label :content
-  %br
-  = form.text_area :content
-
-%p
-- if form.object.new_record?
-  = form.submit 'Create'
-- else
-  = form.submit 'Update'
+-form_for post do |form|
+  = form.error_messages
+  %p
+    = form.label :title
+    %br
+    = form.text_field :title
+  %p
+    = form.label :content
+    %br
+    = form.text_area :content
+  %p
+  - if form.object.new_record?
+    = form.submit 'Create'
+  - else
+    = form.submit 'Update'
