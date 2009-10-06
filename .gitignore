@@ -1,0 +1,11 @@
+test/resources/temp-rss.xml
+.DS_Store
+log/*.log
+tmp/**/*
+doc/api
+doc/app
+.idea
+nbproject
+.project
+coverage
+
