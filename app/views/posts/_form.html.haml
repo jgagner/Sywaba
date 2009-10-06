@@ -1,0 +1,14 @@
+%p
+  = form.label :title
+  %br
+  = form.text_field :title
+%p
+  = form.label :content
+  %br
+  = form.text_area :content
+
+%p
+- if form.object.new_record?
+  = form.submit 'Create'
+- else
+  = form.submit 'Update'

@@ -1,0 +1,6 @@
+#post
+  %h1.post_title= @post.title
+  %p.post_content= @post.content
+
+= link_to 'Edit', edit_post_path(@post)
+= link_to 'All Posts', posts_path
