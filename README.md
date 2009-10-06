@@ -2,11 +2,8 @@ SYWABA - Seriously, you wrote another blog application?
 ==
 Run it like any other rails application.
 
-
-
-
 How do you pronounce it?
-
+==
 I don't know.
 
 
