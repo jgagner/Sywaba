@@ -14,5 +14,6 @@ Rails::Initializer.run do |config|
              :lib => 'acts_as_commentable',
              :source => "http://gems.github.com",
              :version=>'2.0.2'
-  config.gem 'bluecloth'
+  
+  config.gem 'RedCloth'
 end

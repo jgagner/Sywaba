@@ -7,9 +7,10 @@
   %p
     = form.label :content
     %br
-    = form.text_area :content
+    = textile_editor 'post', :content
   %p
   - if form.object.new_record?
     = form.submit 'Create'
   - else
     = form.submit 'Update'
+  = textile_editor_initialize

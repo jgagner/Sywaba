@@ -1,8 +1,8 @@
 #post
   %h1.post_title= @post.title
   .post_content
-    :markdown
-      #{@post.content}
+    :textile
+      #{h @post.content}
 
 = link_to 'Edit', edit_post_path(@post)
 = link_to 'All Posts', posts_path
